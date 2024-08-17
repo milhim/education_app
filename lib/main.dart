@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tdd_part1/core/res/colors.dart';
-
 import 'package:tdd_part1/core/res/fonts.dart';
+import 'package:tdd_part1/core/services/router.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
         ),
         colorScheme: ColorScheme.fromSwatch(accentColor: AppColors.primaryColor),
       ),
+      onGenerateRoute: generateRoute,
     );
   }
 }
